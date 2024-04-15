@@ -10,6 +10,7 @@ import Bai5 from "./BT/Bai5";
 import Bai6 from "./BT/Bai6";
 import Bai7 from "./BT/Bai7";
 import Bai8 from "./BT/Bai8";
+import Calculator from "./BT/Calculator";
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ const App = () => {
         <Stack.Screen name="Bai6" component={Bai6} />
         <Stack.Screen name="Bai7" component={Bai7} />
         <Stack.Screen name="Bai8" component={Bai8} />
+        <Stack.Screen name="Calculator" component={Calculator} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -42,6 +44,7 @@ const HomeScreen = ({ navigation }) => {
       <Button title="Bai6" onPress={() => navigation.navigate('Bai6')} />
       <Button title="Bai7" onPress={() => navigation.navigate('Bai7')} />
       <Button title="Bai8" onPress={() => navigation.navigate('Bai8')} />
+      <Button title="Calculator" onPress={() => navigation.navigate('Calculator')} />
     </SafeAreaView>
   );
 };
